@@ -1,25 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');      /* font redhatdisplay */
+
+/* global styles */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
-
+  font-style: normal;
+  line-height: 1.5;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  --font-family: "Red Hat Display", sans-serif;
+  --font-size: 16px;
+  --kagi-orange: #E47344;
+  --kagi-white: #fff;
+  --kagi-green: #19363a;
+  --color-gray: rgba(255, 255, 255, 0.86);
+  --color-black: #000;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding and borders are included in the total height/width */
 }
 
 body {
@@ -59,10 +69,103 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* GLOBAL VARIABLES */
+:root {
+  /* fonts */
+  --font-red-hat-display: "Red Hat Display";
+
+  /* font sizes */
+  --font-size-5xl: 24px;
+  --font-size-lgi: 19px;
+  --font-size-45xl: 64px;
+  --font-size-32xl: 51px;
+  --font-size-19xl: 38px;
+  --font-size-lg: 18px;
+  --font-size-13xl: 32px;
+  --font-size-7xl: 26px;
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+
+  /* Colors */
+  --kagi-white: #fff;
+  --kagi-green: #19363a;
+  --kagi-orange: #e47344;
+  --color-gray: rgba(255, 255, 255, 0.86);
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-62xl: 81px;
+  --gap-21xl: 40px;
+  --gap-xl: 20px;
+  --gap-4xl: 23px;
+  --gap-75xl: 94px;
+  --gap-28xl: 47px;
+  --gap-85xl: 104px;
+  --gap-33xl: 52px;
+  --gap-7xl: 26px;
+  --gap-65xl: 84px;
+  --gap-23xl: 42px;
+  --gap-2xl: 21px;
+  --gap-51xl: 70px;
+  --gap-14xl: 33px;
+  --gap-base: 16px;
+  --gap-5xl: 24px;
+  --gap-4xl-2: 23.2px;
+  --gap-61xl: 80px;
+  --gap-xs: 12px;
+
+  /* Paddings */
+  --padding-54xl: 73px;
+  --padding-17xl: 36px;
+  --padding-25xl: 44px;
+  --padding-3xl: 22px;
+  --padding-6xs-4: 6.4px;
+  --padding-18xl: 37px;
+  --padding-77xl: 96px;
+  --padding-35xl-1: 54.1px;
+  --padding-42xl: 61px;
+  --padding-5xl: 24px;
+  --padding-11xl: 30px;
+  --padding-29xl: 48px;
+  --padding-49xl: 68px;
+  --padding-12xs: 1px;
+  --padding-65xl: 84px;
+  --padding-4xl: 23px;
+  --padding-641xl: 660px;
+  --padding-xl: 20px;
+  --padding-260xl: 279px;
+  --padding-410xl: 429px;
+  --padding-10xs: 3px;
+  --padding-78xl: 97px;
+  --padding-22xl: 41px;
+  --padding-44xl: 63px;
+  --padding-11xs: 2px;
+  --padding-84xl: 103px;
+  --padding-125xl: 144px;
+  --padding-53xl: 72px;
+  --padding-48xl: 67px;
+  --padding-7xl: 26px;
+  --padding-6xl: 25px;
+  --padding-16xl: 35px;
+  --padding-13xl: 32px;
+  --padding-8xl: 27px;
+  --padding-lgi: 19px;
+  --padding-2xl: 21px;
+  --padding-41xl: 60px;
+  --padding-sm: 14px;
+  --padding-smi: 13px;
+  --padding-4xs: 9px;
+  --padding-mini: 15px;
+  --padding-base: 16px;
+  --padding-3xs: 10px;
+  --padding-3xs-7: 9.7px;
+
+  /* Border radiuses */
+  --br-xl: 20px;
+  --br-xs: 12px;
 }
