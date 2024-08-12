@@ -103,6 +103,7 @@
   font-size: var(--font-size-lg);
   color: var(--kagi-green);
   display: inline-block;
+  padding-bottom: var(--padding-sm);
 }
 
 .step {

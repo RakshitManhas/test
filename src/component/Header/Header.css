@@ -8,7 +8,7 @@
   box-sizing: border-box; 
   overflow: hidden;
 
-  background-image: url('/background.png');
+  background-image: url('/assets/background.png');
   background-size: auto 120%; 
   background-position: center;
   background-repeat: no-repeat;
@@ -31,4 +31,8 @@
   font-weight: 400;
   color: var(--kagi-orange);
   margin-top: 20px;
+}
+
+.title-text{
+  animation: float 6s infinite ease-in-out;
 }
