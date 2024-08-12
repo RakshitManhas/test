@@ -1,0 +1,197 @@
+.services-child {
+  width: 1512px;
+  height: 932px;
+  position: relative;
+  background-color: var(--kagi-orange);
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.services-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-gray);
+  z-index: 1;
+}
+.what-does-kagi {
+  margin: 0;
+  width: 685px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  z-index: 2;
+}
+.what-does-kagi-offer-wrapper {
+  width: 1137px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.with-kagis-comprehensive {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  color: var(--kagi-green);
+  z-index: 2;
+}
+
+.what-does-kagi-offer-wrapper,
+.frame-group {
+  justify-content: center; /* Center the elements within their containers */
+}
+.frame-parent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-4xl);
+  max-width: 100%;
+}
+.rectangle-div,
+.services-inner {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.services-inner {
+  width: 1199px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lgi);
+}
+.rectangle-div {
+  width: 363px;
+  height: 185px;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--kagi-white);
+  border: 2px solid var(--kagi-orange);
+  display: none;
+}
+.frame-child1 {
+  width: 62px;
+  height: 62px;
+  position: relative;
+  z-index: 3;
+}
+.marketplace {
+  position: relative;
+  font-weight: 600;
+  z-index: 1;
+}
+.frame-group,
+.group-div,
+.marketplace-wrapper,
+.services {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.marketplace-wrapper {
+  flex-direction: row;
+  padding: 0 var(--padding-10xs);
+}
+.frame-group,
+.group-div,
+.services {
+  max-width: 100%;
+}
+.group-div {
+  width: 363px;
+  border-radius: var(--br-xs);
+  background-color: var(--kagi-white);
+  border: 2px solid var(--kagi-orange);
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: var(--padding-7xl) var(--padding-13xl) var(--padding-6xl);
+  gap: var(--gap-5xl);
+  z-index: 2;
+}
+.frame-group,
+.services {
+  align-self: stretch;
+}
+.frame-group {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 70px 66px;
+  min-height: 440px;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--kagi-green);
+  justify-content: center;
+}
+.services {
+  background-color: var(--kagi-orange);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center; /* Center the elements horizontally */
+  justify-content: center; /* Center the elements vertically */
+  padding: var(--padding-84xl) var(--padding-125xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-65xl);
+  text-align: center;
+  font-size: var(--font-size-45xl);
+  color: var(--kagi-orange);
+  font-family: var(--font-red-hat-display);
+  height: 100vh; /* Make the section full-height */
+}
+
+@media screen and (max-width: 1125px) {
+  .services {
+    padding-top: var(--padding-48xl);
+    padding-bottom: var(--padding-48xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .what-does-kagi {
+    font-size: var(--font-size-32xl);
+  }
+  .marketplace {
+    font-size: var(--font-size-7xl);
+  }
+  .frame-group {
+    gap: var(--gap-14xl);
+  }
+  .services {
+    gap: var(--gap-23xl);
+    padding: var(--padding-25xl) var(--padding-53xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .what-does-kagi {
+    font-size: var(--font-size-19xl);
+  }
+  .marketplace,
+  .with-kagis-comprehensive {
+    font-size: var(--font-size-lgi);
+  }
+  .frame-group {
+    gap: var(--gap-base);
+  }
+  .services {
+    gap: var(--gap-2xl);
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

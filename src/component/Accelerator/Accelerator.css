@@ -1,0 +1,128 @@
+.accelerator {
+  width: 100%;
+  height: calc(100vh + 60px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0 10%;
+  /* margin-top: 3%; */
+  box-sizing: border-box;
+  position: relative; /* Ensure that the image is contained within the section */
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  z-index: 2; /* Ensure the title overlays the image */
+}
+
+.bitcoin-layer-2-space {
+  color: var(--kagi-orange); /* Use CSS variable for color */
+}
+
+.space {
+  color: var(--kagi-green); /* Use CSS variable for color */
+}
+
+.dotted-line {
+  position: absolute;
+  left: -195px;
+  top: 60px;
+}
+.service-content {
+  position: relative;
+  z-index: 2; /* Ensure the content overlays the image */
+}
+
+/* .space-between{
+    height: 93px;
+} */
+
+.service-content {
+  position: relative;
+  top: 94px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* max-width: 800px; */
+  margin: 0 auto; /* Center horizontally */
+  text-align: left;
+  /* color: var(--kagi-orange); */
+}
+
+.rectangle-parent1,
+.rectangle-parent2 {
+  width: 100%;
+  max-width: 754px;
+  margin-bottom: 16px;
+  padding: 10px 40px;
+  background-color: var(--kagi-white);
+  border: 2px solid var(--kagi-orange);
+  border-radius: 12px;
+  box-sizing: border-box;
+  z-index: 2; 
+  transition: all 0.3s ease;
+}
+
+.rectangle-parent1:hover ,
+.rectangle-parent2:hover{
+  background-color: var(--kagi-orange); 
+  border-color: var(--kagi-orange); 
+  color: var(--kagi-white); 
+  cursor: pointer;
+  transform: scale(1.05); 
+
+  /* animation: float 2s ease-in-out infinite; */
+  /* filter: brightness(100%) contrast(100%);  */
+}
+
+.rectangle-parent1:hover .for-projects, .rectangle-parent1:hover .description,
+.rectangle-parent2:hover .for-investors, .rectangle-parent2:hover .description {
+  color: var(--kagi-white); 
+}
+
+
+.rectangle {
+  position: relative;
+  top: -22px;
+  left: 267px;
+}
+
+.for-projects,
+.for-investors {
+  color: var(--kagi-orange);
+  font-weight: bolder;
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.description {
+  font-size: var(--font-size-lg);
+  color: var(--kagi-green);
+  display: inline-block;
+}
+
+.step {
+  margin-right: 15px;
+}
+
+.service-image-container {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1; /* Place the image behind other components */
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: block;
+}
