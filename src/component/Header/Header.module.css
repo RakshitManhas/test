@@ -1,0 +1,98 @@
+.headerSection {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  min-height: 100vh; 
+  box-sizing: border-box; 
+  overflow: hidden;
+
+  background-image: url('/assets/background.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2% 5%; /* Responsive padding */
+}
+
+.title {
+  font-size: 6vw; /* Use vw for responsive font size */
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333;
+}
+
+.highlight {
+  color: var(--kagi-orange); /* Bitcoin Orange */
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 4vw; /* Use vw for responsive font size */
+  font-weight: 400;
+  color: var(--kagi-orange);
+  margin-top: 2%;
+}
+
+.titleText {
+  animation: float 6s infinite ease-in-out;
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+  .title {
+    font-size: 3.5rem /* Set a specific size for small screens */
+  }
+
+  .subtitle {
+    font-size: 2.25rem; /* Set a specific size for small screens */
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2.5rem /* Set a specific size for small screens */
+  }
+  .titleText{
+    padding-top: 10rem;;
+  }
+  .subtitle {
+    font-size: 1.25rem; /* Set a specific size for small screens */
+  }
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .headerSection {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10% 5%; /* Adjust padding for mobile */
+  }
+
+  .title {
+    font-size: 24px; /* Set a specific size for small screens */
+  }
+
+  .subtitle {
+    font-size: 16px; /* Set a specific size for small screens */
+  }
+
+ 
+}
+
+
+@keyframes float {
+	0% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
+	50% {
+		/* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+		transform: translatey(-10px);
+	}
+	100% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
+}

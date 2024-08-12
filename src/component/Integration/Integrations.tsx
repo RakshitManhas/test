@@ -1,99 +1,81 @@
 import { FunctionComponent } from "react";
-import "./Integrations.css";
+import styles from "./Integrations.module.css";
 
 export type IntegrationsType = {
   className?: string;
 };
 
-const Integrations: FunctionComponent<IntegrationsType> = ({
-  className = "",
-}) => {
+const Integrations: FunctionComponent<IntegrationsType> = ({ className = "" }) => {
   return (
-    <div className={`integrations-container ${className}`}>
-      <div className="integrations2">
-        <div className="top-l2-integrations-wrapper">
-          <h1 className="top-l2-integrations-container">
-            <span>
-              <span>Top</span>
-            </span>
-            <b className="l2-integrations">
-              <span>{` `}</span>
-              <span>L2 Integrations</span>
-            </b>
+    <div className={`${styles.integrationsContainer} ${className}`}>
+      <div className={styles.integrations}>
+        <div className={styles.titleWrapper}>
+          <h1 className={styles.title}>
+            <span>Top</span>
+            <b className={styles.l2Integrations}> L2 Integrations</b>
           </h1>
         </div>
-        <div className="frame-div">
-          <img
-            className="frame-child11"
-            alt="kagi-logo-vector"
-            src="assets/icons/group-35244-1.svg"
-          />
-          <div className="ellipse-parent2">
-            <div className="ellipse-div" />
+        <div className={styles.iconGrid}>
+          <div className={styles.iconContainer}>
+            <div className={styles.iconCircle} />
             <img
-              className="image-17-icon"
+              className={styles.iconImage}
               loading="lazy"
-              alt="1"
-            src="assets/icons/image-17-1@2x.png"
+              alt="1 M"
+              src="assets/icons/image-17-1@2x.png"
             />
           </div>
-          <div className="ellipse-parent">
-            <div className="ellipse-div" />
+          <div className={styles.iconContainer}>
+            <div className={styles.iconCircle} />
             <img
-              className="image-17-icon"
+              className={styles.iconImage}
               loading="lazy"
-              alt="2"
+              alt="2 "
               src="assets/icons/image-17@2x.png"
             />
           </div>
-          <div className="ellipse-group">
-            <div className="ellipse-div" />
+          <div className={styles.iconContainer}>
+            <div className={styles.iconCircle} />
             <img
-              className="image-17-icon"
+              className={styles.iconImage}
               loading="lazy"
               alt="3"
               src="assets/icons/image-19@2x.png"
             />
           </div>
-          <div className="ellipse-container">
-            <div className="ellipse-div" />
+          <div className={styles.iconContainer}>
+            <div className={styles.iconCircle} />
             <img
-              className="image-17-icon"
+              className={styles.iconImage}
               loading="lazy"
               alt="4"
               src="assets/icons/image-16@2x.png"
             />
-          </div>
-          <div className="ellipse-parent1">
-            <div className="ellipse-div" />
+          </div> 
+          <div className={styles.iconContainer}>
+            <div className={styles.iconCircle} />
             <img
-              className="image-17-icon"
+              className={styles.iconImage}
               loading="lazy"
               alt="6"
               src="assets/icons/image-20@2x.png"
             />
           </div>
-          <img
-            className="kagi-finance-icon"
-            loading="lazy"
-            alt=""
-            src="assets/kagi-finance.svg"
-          />
-          <img
-            className="vector-icon"
-            alt=""
-            src="assets/vector-123.svg"
-          />
-          <div className="frame-parent1">
-          <div className="ellipse-div" />
+          <div className={styles.iconContainer}>
+            <div className={styles.iconCircle} />
             <img
-              className="image-17-icon"
+              className={styles.iconImage}
               loading="lazy"
-              alt="6"
+              alt="5"
               src="assets/icons/image-20-1@2x.png"
             />
           </div>
         </div>
+        <img
+          className={styles.vectorBG}
+          alt="Vector"
+          src="assets/vector-123.svg"
+        />
       </div>
     </div>
   );

@@ -1,16 +1,13 @@
 import { FunctionComponent, useMemo, useState, type CSSProperties } from "react";
-import "./GroupComponent.css";
+import styles from "./GroupComponent.module.css";
 
 export type GroupComponentType = {
   className?: string;
   group?: string;
   liquidityLocks?: string;
-  hoverImage?:string;
-
-  /** Style props */
+  hoverImage?: string;
   propWidth?: CSSProperties["width"];
 };
-
 
 const GroupComponent: FunctionComponent<GroupComponentType> = ({
   className = "",
@@ -19,8 +16,8 @@ const GroupComponent: FunctionComponent<GroupComponentType> = ({
   liquidityLocks,
   hoverImage,
 }) => {
-
   const [currentImage, setCurrentImage] = useState(group);
+
   const groupIconStyle: CSSProperties = useMemo(() => {
     return {
       width: propWidth,
@@ -28,20 +25,19 @@ const GroupComponent: FunctionComponent<GroupComponentType> = ({
   }, [propWidth]);
 
   return (
-    <div className={`rectangle-container ${className}`}
-    onMouseEnter={() => setCurrentImage(hoverImage)} 
-    onMouseLeave={() => setCurrentImage(group)}    
+    <div
+      className={`${styles.rectangleContainer} ${className}`}
+      onMouseEnter={() => setCurrentImage(hoverImage)}
+      onMouseLeave={() => setCurrentImage(group)}
     >
-      
       <img
-        className="group-icon"
+        className={styles.groupIcon}
         loading="lazy"
-        alt=""
+        alt={liquidityLocks}
         src={currentImage}
         style={groupIconStyle}
       />
-      <div className="liquidity-locks">{liquidityLocks}</div>
-      <div className="hover-image" data-hover-image={hoverImage}></div>
+      <div className={styles.liquidityLocks}>{liquidityLocks}</div>
     </div>
   );
 };

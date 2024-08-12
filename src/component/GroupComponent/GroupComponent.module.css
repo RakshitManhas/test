@@ -1,0 +1,66 @@
+.rectangleContainer {
+  width: 100%;
+  max-width: 363px;
+  border-radius: var(--br-xs);
+  background-color: var(--kagi-white);
+  border: 2px solid var(--kagi-orange);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 20px 40px; /* Adjusted padding for better spacing */
+  gap: 10px; /* Consistent gap between items */
+  font-size: 1.25rem; /* Default font size */
+  color: var(--kagi-green);
+  font-family: var(--font-red-hat-display);
+  transition: all 0.3s ease;
+}
+
+.groupIcon {
+  width: 82px;
+  height: 82px;
+  transition: all 0.3s ease;
+}
+
+.liquidityLocks {
+  font-weight: 600;
+  text-align: center;
+  z-index: 1;
+}
+
+.rectangleContainer:hover {
+  background-color: var(--kagi-orange);
+  border-color: var(--kagi-orange);
+  color: var(--kagi-white);
+  cursor: pointer;
+}
+
+.rectangleContainer:hover .groupIcon {
+  transform: scale(1.05);
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .groupIcon {
+    width: 40px; 
+    height: 40px; 
+  }
+
+  .rectangleContainer {
+    padding: 15px 8px; 
+    font-size: 0.8rem;
+    max-width: 150px; 
+  }
+
+  .liquidityLocks {
+    font-size: 0.8rem; 
+  }
+}
+
+@media (max-width: 1125px) {
+  .rectangleContainer {
+    max-width: 250px;
+    font-size: 1rem; 
+  }
+}

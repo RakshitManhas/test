@@ -169,3 +169,25 @@ button:focus-visible {
   }
 }
 
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  :root {
+    --font-size-base: 14px; /* Adjust base font size for mobile */
+    --gap-base: 12px; /* Adjust base gap for mobile */
+    --padding-base: 12px; /* Adjust base padding for mobile */
+  }
+
+  body {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+  }
+
+  h1 {
+    font-size: 2.5em; /* Reduce heading size for mobile */
+  }
+
+  button {
+    padding: 0.4em 0.8em; /* Adjust button padding for mobile */
+    font-size: 0.9em; /* Reduce button font size */
+  }
+}

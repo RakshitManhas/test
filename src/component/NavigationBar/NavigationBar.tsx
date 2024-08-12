@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
-import logo from "/assets/Logo Kagi.png"
-import "./NavigationBar.css";
+import logo from "/assets/Logo Kagi.png";
+import styles from "./NavigationBar.module.css";
 
 export type NavigationBarType = {
   className?: string;
@@ -8,44 +8,34 @@ export type NavigationBarType = {
 
 const NavigationBar: FunctionComponent<NavigationBarType> = ({ className = "" }) => {
   return (
-    <div className={`rectangle-group ${className}`}>
-      <div className="logo-kagi-wrapper">
+    <div className={`${styles.rectangleGroup} ${className}`}>
+      <div className={styles.logoKagiWrapper}>
         <img
-          className="logo-kagi-icon"
+          className={styles.logoKagiIcon}
           loading="lazy"
           alt="Kagi Logo"
           src={logo}
         />
       </div>
-      <div className="navigation-bar">
-        <div className="home-parent">
-          <div className="home">
-            <div className="home-wrapper">
-              <a className="home1">Home</a>
-            </div>
+      <div className={styles.navigationBar}>
+        <div className={styles.homeParent}>
+          <div className={styles.home}>
+            <a className={styles.home1}>Home</a>
           </div>
-          <div className="home">
-            <div className="home-wrapper">
-              <a className="about-us1">About Us</a>
-            </div>
+          <div className={styles.home}>
+            <a className={styles.aboutUs1}>About Us</a>
           </div>
-          <div className="home">
-            <div className="home-wrapper">
-              <a className="project-features1">Project Features</a>
-            </div>
+          <div className={styles.home}>
+            <a className={styles.projectFeatures1}>Project Features</a>
           </div>
-          <div className="home">
-            <div className="home-wrapper">
-              <a className="investor-features1">Investor Features</a>
-            </div>
+          <div className={styles.home}>
+            <a className={styles.investorFeatures1}>Investor Features</a>
           </div>
-          <div className="home">
-            <div className="home-wrapper">
-              <a className="integrations1">Integrations</a>
-            </div>
+          <div className={styles.home}>
+            <a className={styles.integrations1}>Integrations</a>
           </div>
-          <div className="app-coming-soon-wrapper">
-            <a className="app-coming-soon">App Coming Soon</a>
+          <div className={styles.appComingSoonWrapper}>
+            <a className={styles.appComingSoon}>App Coming Soon</a>
           </div>
         </div>
       </div>

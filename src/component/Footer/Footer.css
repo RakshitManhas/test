@@ -181,3 +181,32 @@
     gap: var(--gap-xl);
   }
 }
+
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .rectangle-parent3 {
+    flex-direction: column; /* Stack items vertically */
+    padding: var(--padding-5xl); /* Adjust padding for mobile */
+  }
+
+  .logo-content {
+    flex-direction: column; /* Stack logo content vertically */
+    align-items: center; /* Center items */
+  }
+
+  .want-to-lock {
+    font-size: var(--font-size-24xl); /* Reduce font size for mobile */
+    text-align: center; /* Center text */
+  }
+
+  .kagi-allows-companies {
+    font-size: var(--font-size-3xl); /* Reduce font size for mobile */
+    text-align: center; /* Center text */
+  }
+
+  .website-layout-child {
+    padding: var(--padding-10xl); /* Adjust padding for mobile */
+    font-size: var(--font-size-30xl); /* Reduce font size for mobile */
+  }
+}

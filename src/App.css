@@ -12,3 +12,15 @@
   margin: 0;
   box-sizing: border-box; /* Ensures padding and borders are included in the total height/width */
 }
+
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .landing-page {
+    padding: 10px; /* Add padding for smaller screens */
+  }
+
+  #root {
+    height: auto; /* Allow height to adjust based on content */
+  }
+}

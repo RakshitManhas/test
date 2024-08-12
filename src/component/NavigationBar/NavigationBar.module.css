@@ -1,0 +1,128 @@
+/* General Styles */
+.rectangleGroup {
+  display: flex;
+  align-items: flex-end; /* Adjusted to match original */
+  justify-content: space-between;
+  padding: var(--padding-29xl); /* Matches original padding */
+  background-color: var(--kagi-white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  gap: var(--gap-61xl); /* Retained gap from original */
+  height: 171px; /* Ensure height matches original */
+}
+
+.logoKagiWrapper {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: var(--padding-3xs-7); /* Match original padding */
+  max-width: 368px; /* Match original */
+  max-height: 63px; /* Match original */
+}
+
+.logoKagiIcon {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.navigationBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  color: var(--kagi-green);
+  font-family: var(--font-red-hat-display);
+  padding: var(--padding-sm) var(--padding-xl) var(--padding-smi) var(--padding-2xl); /* Adjusted to match original */
+  min-width: 624px; /* Ensure minimum width matches original */
+}
+
+.homeParent {
+  display: flex;
+  align-items: flex-start; /* Adjusted to match original */
+  justify-content: flex-start; /* Adjusted to match original */
+  gap: var(--gap-xs);
+}
+
+.home {
+  padding: var(--padding-3xs);
+}
+
+.home1, .aboutUs1, .projectFeatures1, .investorFeatures1, .integrations1, .appComingSoon {
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.home1:hover, .aboutUs1:hover, .projectFeatures1:hover, .investorFeatures1:hover, .integrations1:hover {
+  color: var(--kagi-orange);
+  cursor: pointer;
+}
+
+.appComingSoonWrapper {
+  border-radius: var(--br-xs);
+  border: 1px solid var(--kagi-orange);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  padding: var(--padding-4xs) var(--padding-base);
+  white-space: nowrap;
+  color: var(--kagi-orange); /* Adjusted for consistency */
+  background-color: var(--kagi-white); /* Adjusted for hover state */
+  transition: color 0.05s, background-color 0.7s;
+}
+
+.appComingSoonWrapper:hover {
+  color: var(--kagi-white);
+  background-color: var(--kagi-orange);
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .rectangleGroup {
+    padding: var(--padding-xs) var(--padding-md); /* Adjusted padding */
+  }
+
+  .homeParent {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .home {
+    flex-basis: 48%;
+    padding: var(--padding-2xs);
+    font-size: 12px;
+  }
+
+  .appComingSoonWrapper {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: var(--padding-2xs);
+  }
+
+  .rectangleGroup {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-xl);
+  }
+
+  .logoKagiWrapper {
+    padding-bottom: var(--padding-3xs);
+  }
+}
+
+@media (max-width: 450px) {
+  .rectangleGroup {
+    gap: var(--gap-xl);
+  }
+}
