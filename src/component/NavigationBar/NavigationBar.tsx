@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import logo from "/assets/Logo Kagi.png"
-import "./NavBar.css";
+import "./NavigationBar.css";
 
 export type NavigationBarType = {
   className?: string;
