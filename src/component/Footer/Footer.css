@@ -85,7 +85,7 @@
 }
 .frame-child14 {
   align-self: stretch;
-  height: 39.9px;
+  max-height: 39.9px;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -97,7 +97,7 @@
   justify-content: flex-end;
   padding: 0 0 var(--padding-6xs-4);
   box-sizing: border-box;
-  gap: var(--gap-xs);
+  gap: 40px;
   color: var(--kagi-orange);
 }
 .logo-content {
