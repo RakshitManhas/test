@@ -2,7 +2,7 @@
 .rectangleGroup {
   display: flex;
   justify-content: space-between;
-  padding: var(--padding-29xl); /* Matches original padding */
+padding: 10px;
   background-color: var(--kagi-white);
   position: fixed;
   top: 0;
@@ -12,14 +12,14 @@
   width: 100%;
   box-sizing: border-box;
   gap: var(--gap-61xl); /* Retained gap from original */
-  height: 171px; /* Ensure height matches original */
+  height: 100px; /* Ensure height matches original */
   align-items: center;
 }
 
 .logoKagiWrapper {
   display: flex;
   align-items: flex-end;
-  padding-bottom: var(--padding-3xs-7); /* Match original padding */
+  padding-left: 50px; /* Match original padding */
   max-width: 368px; /* Match original */
   max-height: 63px; /* Match original */
 }

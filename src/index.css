@@ -124,7 +124,8 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  box-sizing: border-box; /* Ensures padding and borders are included in the total height/width */
+  box-sizing: border-box; 
+  scroll-behavior: smooth;
 }
 
 body {

@@ -8,7 +8,7 @@ export type ServicesType = {
 
 const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
   return (
-    <section className={`${styles.services} ${className}`}>
+    <section id="Services" className={`${styles.services} ${className}`}>
       <div className={styles.servicesBackground} />
       <div className={styles.contentContainer}>
         <h1 className={styles.title}>What does Kagi offer?</h1>

@@ -7,7 +7,7 @@ export type IntegrationsType = {
 
 const Integrations: FunctionComponent<IntegrationsType> = ({ className = "" }) => {
   return (
-    <div className={`${styles.integrationsContainer} ${className}`}>
+    <div className={`${styles.integrationsContainer} ${className}`} id="Integrations" >
       <div className={styles.integrations}>
         <div className={styles.titleWrapper}>
           <h1 className={styles.title}>
