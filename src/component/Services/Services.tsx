@@ -39,7 +39,7 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
           />
           <GroupComponent
             group="assets/icons/noun-marketplace-6880611 1.svg"
-            propWidth="82px"
+            propWidth="72px"
             liquidityLocks="Marketplace"
             hoverImage="assets/icons/onhover/noun-marketplace-6880611 2.svg"
           />
@@ -51,7 +51,7 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
           />
           <GroupComponent
             group="assets/icons/noun-token-2241985 1.svg"
-            propWidth="82px"
+            propWidth="72px"
             liquidityLocks="Token Vesting"
             hoverImage="assets/icons/onhover/noun-token-2241985 2.svg"
           />

@@ -7,9 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
-  padding: 40px 10%;
+  padding: 40px;
   box-sizing: border-box;
 }
 
@@ -26,29 +24,29 @@
 }
 
 .serviceImageContainer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  z-index: 1;
-  pointer-events: none;
+  position: relative;
+  left: 15%;
+  transform: translateY(-44%);
+  width: 80%;
 }
 
 .serviceImage {
   width: 100%;
   height: auto;
   max-width: 1280px;
+  padding-bottom: 60px;
 }
 
 .serviceContent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 800px;
+  
+  width: 100%;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
   z-index: 2;
+  text-align: left;
 }
 
 .rectangleParent1,
@@ -57,12 +55,27 @@
   background-color: var(--kagi-white);
   border: 2px solid var(--kagi-orange);
   border-radius: 12px;
-  padding: 20px;
+  padding: 30px 40px;
   margin-bottom: 16px;
   box-sizing: border-box;
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 6%;
+  left: 42%;
+  max-width: 754px;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.rectangleParent1:hover,
+.rectangleParent2:hover {
+  background-color: var(--kagi-orange);
+  border-color: var(--kagi-orange);
+  color: var(--kagi-white);
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .forProjects,
@@ -71,6 +84,13 @@
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 10px;
+}
+
+.rectangleParent1:hover .forProjects,
+.rectangleParent1:hover .description,
+.rectangleParent2:hover .forInvestors,
+.rectangleParent2:hover .description {
+  color: var(--kagi-white);
 }
 
 .description {
@@ -123,5 +143,28 @@
 
   .serviceImageContainer {
     bottom: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+.accelerator{
+  height: 102vh;
+}
+
+
+  .rectangleParent1,
+.rectangleParent2 {
+  max-width: 680px;
+  padding: 20px 30px;
+}
+
+.serviceImageContainer {
+  position: relative;
+  left: 15%;
+  transform: translateY(-44%);
+  width: 80%;
+}
+.title {
+   margin-bottom: 10px;
   }
 }
