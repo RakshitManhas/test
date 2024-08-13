@@ -45,7 +45,7 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
           />
           <GroupComponent
             group="assets/icons/noun-staking-5677836 1.svg"
-            propWidth="82px"
+            propWidth="72px"
             liquidityLocks="Staking Platform"
             hoverImage="assets/icons/onhover/noun-staking-5677836 2.svg"
           />

@@ -1,0 +1,240 @@
+.frameChild13,
+.wantToLock {
+  position: relative;
+  max-width: 100%;
+}
+.frameChild13 {
+  height: 243px;
+  width: 1366px;
+  box-shadow: 10px 13px 14px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-xl);
+  background-color: var(--kagi-green);
+  display: none;
+}
+.wantToLock {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  z-index: 1;
+}
+.kagiAllowsCompanies {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  color: var(--kagi-orange);
+  text-align: left;
+  z-index: 1;
+}
+.lockCallToAction {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-4xl);
+  max-width: 100%;
+}
+.lock {
+  height: 151.9px;
+  width: 112px;
+  position: relative;
+  z-index: 1;
+  animation: float1 6s infinite ease-in-out;
+}
+
+@keyframes float1 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.rectangleParent3 {
+  align-self: stretch;
+  box-shadow: 10px 13px 14px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-xl);
+  background-color: var(--kagi-green);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-18xl) var(--padding-77xl) var(--padding-35xl-1) var(--padding-42xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.frameChild14,
+.kagiLogoIcon {
+  position: relative;
+  max-width: 100%;
+}
+.kagiLogoIcon {
+  width: 368px;
+  max-height: 100%;
+}
+.frameChild14 {
+  align-self: stretch;
+  max-height: 39.9px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.logoContentInner {
+  width: 210px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-6xs-4);
+  box-sizing: border-box;
+  gap: 40px;
+  color: var(--kagi-orange);
+}
+.logoContent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.logoContentWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-25xl);
+  box-sizing: border-box;
+}
+.frameParent2,
+.logoContentWrapper,
+.websiteLayoutChild {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameParent2 {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-62xl);
+}
+.websiteLayoutChild {
+  flex-direction: row;
+  padding: var(--padding-54xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-45xl);
+  color: var(--kagi-white);
+  font-family: var(--font-red-hat-display);
+}
+/* @media screen and (max-width: 1400px) {
+  .rectangleParent3 {
+    flex-wrap: wrap;
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-29xl);
+    box-sizing: border-box;
+  }
+  .logoContentWrapper {
+    padding-left: var(--padding-3xl);
+    padding-right: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+} */
+@media screen and (max-width: 825px) {
+  .wantToLock {
+    font-size: var(--font-size-32xl);
+  }
+  .rectangleParent3 {
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .logoContent {
+    flex-wrap: wrap;
+  }
+  .frameParent2 {
+    gap: var(--gap-21xl);
+  }
+  .websiteLayoutChild {
+    padding-left: var(--padding-17xl);
+    padding-right: var(--padding-17xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wantToLock {
+    font-size: var(--font-size-19xl);
+  }
+  .kagiAllowsCompanies {
+    font-size: var(--font-size-lgi);
+  }
+  .frameParent2 {
+    gap: var(--gap-xl);
+  }
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .rectangleParent3 {
+    flex-direction: column;
+    padding: var(--padding-5xl);
+  }
+  .logoContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wantToLock {
+    font-size: var(--font-size-24xl);
+    text-align: center;
+  }
+  .kagiAllowsCompanies {
+    font-size: var(--font-size-3xl);
+    text-align: center;
+  }
+  .websiteLayoutChild {
+    padding: var(--padding-10xl);
+    font-size: var(--font-size-30xl);
+  }
+}
+
+
+/* Other styles remain unchanged */
+
+/* Media query for 1280x800 resolution */
+@media screen and (max-width: 1280px) {
+    .rectangleParent3 {
+      box-sizing: border-box;
+    }
+  
+    /* .logoContent {
+      align-items: center;
+      text-align: center;
+      gap: var(--gap-lg);
+    } */
+  
+    .wantToLock {
+        font-size: 52px;
+        text-align: center;
+      }
+  
+    .kagiAllowsCompanies {
+      font-size: var(--font-size-4xl);
+      text-align: center;
+    }
+  
+    .lock {
+      height: 120px;
+      width: 90px;
+      margin-top: var(--margin-lg);
+    }
+    
+    .websiteLayoutChild {
+
+      font-size: var(--font-size-35xl);
+    }
+  
+}
+  

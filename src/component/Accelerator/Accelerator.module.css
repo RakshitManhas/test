@@ -1,0 +1,127 @@
+/* Accelerator.module.css */
+
+.accelerator {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 40px 10%;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+
+.highlight {
+  color: var(--kagi-orange);
+  font-weight: 700;
+}
+
+.serviceImageContainer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.serviceImage {
+  width: 100%;
+  height: auto;
+  max-width: 1280px;
+}
+
+.serviceContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.rectangleParent1,
+.rectangleParent2 {
+  width: 100%;
+  background-color: var(--kagi-white);
+  border: 2px solid var(--kagi-orange);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.forProjects,
+.forInvestors {
+  color: var(--kagi-orange);
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  color: var(--kagi-green);
+}
+
+.dottedLine {
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  z-index: -1;
+  display: none;
+}
+
+.icon {
+  width: 150px;
+}
+
+.step {
+  margin-right: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .accelerator {
+    height: auto;
+    padding: 0 5%;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .rectangleParent1,
+  .rectangleParent2 {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .forProjects,
+  .forInvestors {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .serviceImageContainer {
+    bottom: 0;
+  }
+}

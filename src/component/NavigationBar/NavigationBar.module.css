@@ -1,7 +1,6 @@
 /* General Styles */
 .rectangleGroup {
   display: flex;
-  align-items: flex-end; /* Adjusted to match original */
   justify-content: space-between;
   padding: var(--padding-29xl); /* Matches original padding */
   background-color: var(--kagi-white);
@@ -14,6 +13,7 @@
   box-sizing: border-box;
   gap: var(--gap-61xl); /* Retained gap from original */
   height: 171px; /* Ensure height matches original */
+  align-items: center;
 }
 
 .logoKagiWrapper {
@@ -35,7 +35,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-xl);
   color: var(--kagi-green);
   font-family: var(--font-red-hat-display);
   padding: var(--padding-sm) var(--padding-xl) var(--padding-smi) var(--padding-2xl); /* Adjusted to match original */
@@ -126,4 +125,41 @@
   .rectangleGroup {
     gap: var(--gap-xl);
   }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .rectangleGroup {
+    padding: 2% 3%; /* Matches original padding */
+    box-sizing: border-box;
+    gap: 10px; /* Retained gap from original */
+    height: 120px; /* Ensure height matches original */
+  }
+  
+  .logoKagiWrapper {
+    max-width: 300px; /* Match original */
+    max-height: 63px; /* Match original */
+  }
+  
+  .navigationBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--kagi-green);
+    font-family: var(--font-red-hat-display);
+    padding: var(--padding-sm) var(--padding-xl) var(--padding-smi) var(--padding-2xl); /* Adjusted to match original */
+    min-width: 624px; /* Ensure minimum width matches original */
+  }
+  
+  .homeParent {
+    display: flex;
+    align-items: flex-start; /* Adjusted to match original */
+    justify-content: flex-start; /* Adjusted to match original */
+    gap: var(--gap-xs);
+  }
+  
+  .home {
+    padding: var(--padding-3xs);
+  }
+
 }
