@@ -71,14 +71,15 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   padding: var(--padding-4xs) var(--padding-base);
   white-space: nowrap;
-  color: var(--kagi-orange); /* Adjusted for consistency */
-  background-color: var(--kagi-white); /* Adjusted for hover state */
+  color: var(--kagi-white);
+  background-color: var(--kagi-orange);
   transition: color 0.05s, background-color 0.7s;
 }
 
 .appComingSoonWrapper:hover {
-  color: var(--kagi-white);
-  background-color: var(--kagi-orange);
+  color: var(--kagi-orange);
+  border: 1px solid var(--kagi-orange);
+  background-color: var(--kagi-white);
   cursor: pointer;
 }
 
