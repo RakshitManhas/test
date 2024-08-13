@@ -36,13 +36,6 @@ const Accelerator: React.FC<AcceleratorProps> = ({ className = "" }) => {
             capabilities.
           </div>
         </div>
-        <div className={styles.serviceImageContainer}>
-          <img
-            src="assets/Ecosystem Growth vector.svg"
-            alt="Service"
-            className={styles.serviceImage}
-          />
-        </div>
       </div>
     </section>
   );

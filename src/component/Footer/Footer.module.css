@@ -177,28 +177,6 @@
   }
 }
 
-/* 768px Screens */
-/* @media (max-width: 768px) {
-  .rectangleParent3 {
-    padding: 24px;
-  }
-
-  .wantToLock {
-    font-size: 22px; 
-    text-align: center;
-  }
-
-  .kagiAllowsCompanies {
-    font-size: var(--font-size-3xl); 
-    text-align: center;
-  }
-
-  .websiteLayoutChild {
-    padding: var(--padding-10xl);
-    font-size: var(--font-size-30xl);
-  }
-} */
-
 /* 450px Screens */
 @media (max-width: 450px) {
   .websiteLayoutChild {
