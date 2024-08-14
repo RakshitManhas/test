@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import styles from "./Integrations.module.css";
 
 export type IntegrationsType = {
@@ -6,6 +6,25 @@ export type IntegrationsType = {
 };
 
 const Integrations: FunctionComponent<IntegrationsType> = ({ className = "" }) => {
+
+  const [imageSrc, setImageSrc] = useState('assets/vector-123.svg');
+
+  useEffect(() => {
+    const handleResize = () => {
+      console.log(window.innerWidth);
+      if (window.innerWidth <= 768) {
+        setImageSrc('assets/vector-mobile768.png');
+      } else {
+        setImageSrc('assets/vector-123.svg');
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+
   return (
     <div className={`${styles.integrationsContainer} ${className}`} id="Integrations" >
       <div className={styles.integrations}>
@@ -74,9 +93,7 @@ const Integrations: FunctionComponent<IntegrationsType> = ({ className = "" }) =
         <img
           className={styles.vectorBG}
           alt="Vector"
-          src="assets/vector-123.svg"
-          srcSet="assets/vector-mobile768.png 768w, assets/vector-123.svg"
-          sizes="(max-width: 768px) 768w"
+          src={imageSrc}
         />
       </div>
     </div>
