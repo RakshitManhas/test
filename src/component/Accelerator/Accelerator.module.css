@@ -166,8 +166,8 @@
 
 @media (min-width:1550px) {
   .accelerator {
-    background-size: 90%;
-    min-height: 90vh;
+    background-size: 70%;
+        min-height: 100vh;
     gap: 3vh;
   }
   
