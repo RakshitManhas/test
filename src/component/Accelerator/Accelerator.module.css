@@ -164,19 +164,18 @@
   
   .accelerator {
     background-size: 80%;
-    height: 90vh;
+    height: 85vh;
 
   }
 }
 
-/* @media (min-width: 1700px){
+@media (min-width: 1900px){
   
   .accelerator {
-    background-size: 80%;
-    height: 95vh;
+      height: 105vh;
 
   }
-} */
+}
 
 /*
 
