@@ -189,8 +189,8 @@ padding: 10px;
   }
 
   .rectangleGroup{
-    justify-content: flex-start;
-    gap: 50px;
+    /* justify-content: flex-start; */
+    gap: 70px;
   }
 }
 
