@@ -14,8 +14,11 @@
   background-repeat: no-repeat;
   
   background-size: 90%;
-    min-height: 90vh;
-    gap: 10vh;
+    min-height: 45vw;
+    max-height: 100vh;
+    max-width: 1440px;
+    
+    margin: 0 auto;
 }
 
 .title {
@@ -117,16 +120,10 @@
   }
 }
 
-@media (max-width: 1440px) {
-  .accelerator {
-    background-size: 90%;
-    gap: 5vh;
-  }
-}
 
 @media (max-width: 1280px) {
   .accelerator {
-    min-height: 95vh;
+    /* min-height: 95vh; */
     background-size: 80%;
     gap: 5vh;
   }
@@ -151,24 +148,13 @@
   }
 }
 
-@media (min-width: 1281px) and (max-width: 1440px) {
+@media (min-width: 1280px) and (max-width: 1440px){
+  /* Styles for viewport with width 1440px */
   .accelerator {
-    background-size: 90%;
-    min-height: 90vh;
-    gap: 10vh;
-  }
-  .rectangleParent1,
-  .rectangleParent2 {
-    max-width: 640px;
-    padding: 20px 30px;
-  }
-}
+    background-size: 80%;
+    min-height: 95vh;
+    gap: 4vw;
+    max-width: 1440px;
 
-@media (min-width:1550px) {
-  .accelerator {
-    background-size: 70%;
-        min-height: 100vh;
-    gap: 3vh;
   }
-  
 }
