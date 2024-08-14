@@ -78,11 +78,11 @@
 
 @media (max-width: 450px) {
   .title {
-    font-size: 2rem;
+    font-size: 30px;
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 12px;
   }
 
   .groupContainer {
@@ -91,5 +91,8 @@
 
   .services {
     padding: 2% 2%;
+  }
+  .contentContainer{
+    padding-bottom: 40px;
   }
 }

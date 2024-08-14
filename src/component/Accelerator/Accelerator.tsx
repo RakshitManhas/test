@@ -6,6 +6,8 @@ export type AcceleratorProps = {
 };
 
 const Accelerator: React.FC<AcceleratorProps> = ({ className = "" }) => {
+ 
+
   return (
     <section className={`${styles.accelerator} ${className}`}>
       <h1 className={styles.title}>

@@ -40,10 +40,17 @@
   transform: scale(1.05);
 }
 
+@media (max-width: 1125px) {
+  .rectangleContainer {
+    max-width: 250px;
+    font-size: 1rem; 
+  }
+}
+
 /* Media query for mobile responsiveness */
 @media (max-width: 768px) {
   .groupIcon {
-    width: 40px; 
+    width: 40px !important; 
     height: 40px; 
   }
 
@@ -58,9 +65,3 @@
   }
 }
 
-@media (max-width: 1125px) {
-  .rectangleContainer {
-    max-width: 250px;
-    font-size: 1rem; 
-  }
-}

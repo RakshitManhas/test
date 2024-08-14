@@ -1,4 +1,4 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import logo from "/assets/Logo Kagi.png";
 import styles from "./NavigationBar.module.css";
 import { scrollToSection } from "./scroller";
@@ -8,10 +8,16 @@ export type NavigationBarType = {
 };
 
 const NavigationBar: FunctionComponent<NavigationBarType> = ({ className = "" }) => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleScroll = (id: string) => {
     scrollToSection(id, 70);
-  }
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+    console.log(isMobileMenuOpen);
+  };
 
   return (
     <div className={`${styles.rectangleGroup} ${className}`}>
@@ -23,25 +29,23 @@ const NavigationBar: FunctionComponent<NavigationBarType> = ({ className = "" })
           src={logo}
         />
       </div>
-      <div className={styles.navigationBar}>
-        <div className={styles.homeParent}>
-          {/* <div className={styles.home}>
-            <a className={styles.home1}>Home</a>
-          </div> */}
-          {/* <div className={styles.home}>
-            <a className={styles.aboutUs1}>About Us</a>
-          </div>
-          <div className={styles.home}>
-            <a className={styles.projectFeatures1}>Project Features</a>
-          </div> */}
-          <div className={styles.home}>
-            <a className={styles.investorFeatures1} onClick={() => handleScroll('Services')} >Services</a>
-          </div>
-          <div className={styles.home}>
-            <a className={styles.integrations1}onClick={() => handleScroll('Integrations')} >Integrations</a>
-          </div>
-          <div className={styles.appComingSoonWrapper}>
-            <a className={styles.appComingSoon}>App Coming Soon</a>
+      <div className={styles.navigationWrapper}>
+        <div className={styles.hamburger} onClick={toggleMobileMenu}>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+          <div className={styles.bar}></div>
+        </div>
+        <div className={`${styles.navigationBar} ${isMobileMenuOpen ? styles.open : ''}`}>
+          <div className={styles.homeParent}>
+            <div className={styles.home}>
+              <a className={styles.investorFeatures1} onClick={() => handleScroll('Services')} >Services</a>
+            </div>
+            <div className={styles.home}>
+              <a className={styles.integrations1} onClick={() => handleScroll('Integrations')} >Integrations</a>
+            </div>
+            <div className={styles.appComingSoonWrapper}>
+              <a className={styles.appComingSoon}>App Coming Soon</a>
+            </div>
           </div>
         </div>
       </div>

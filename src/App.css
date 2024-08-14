@@ -16,9 +16,7 @@
 
 /* Media query for mobile responsiveness */
 @media (max-width: 768px) {
-  .landing-page {
-    padding: 10px; /* Add padding for smaller screens */
-  }
+  
 
   #root {
     height: auto; /* Allow height to adjust based on content */

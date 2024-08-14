@@ -75,6 +75,8 @@ const Integrations: FunctionComponent<IntegrationsType> = ({ className = "" }) =
           className={styles.vectorBG}
           alt="Vector"
           src="assets/vector-123.svg"
+          srcSet="assets/vector-mobile768.png 768w"
+          sizes="(max-width: 768px) 768w"
         />
       </div>
     </div>
