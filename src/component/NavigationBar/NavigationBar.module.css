@@ -157,9 +157,9 @@ padding: 10px;
 
 @media (max-width: 768px) {
   .navigationBar {
-    display: none;
+    display: block;
     position: absolute;
-    top: 60px; /* Adjust based on the height of your navbar */
+    top: 100px; /* Adjust based on the height of your navbar */
     right: 0;
     background-color: #333;
     flex-direction: column;
@@ -168,31 +168,32 @@ padding: 10px;
     padding: 10px;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
+    z-index: 1001;
   }
 
   .navigationBar.open {
     transform: translateX(0);
+    width: 100%; /* Ensure it does not exceed the viewport width */
+    max-width: 250px; /* Maintain the max-width */
+    overflow: hidden; /* Prevent content from spilling out */
+  }
+
+  .homeParent {
+    flex-direction: column;
+    gap: 20px; /* Adjust spacing for better visibility */
   }
 
   .hamburger {
     display: flex;
-    :hover{
-      cursor: pointer;
-    }
   }
 
+  .rectangleGroup {
+    gap: 70px;
+  }
 
-  .logoKagiWrapper{
+  .logoKagiWrapper {
     max-width: 203px;
     max-height: 63px;
     padding-left: 30px;
   }
-
-  .rectangleGroup{
-    /* justify-content: flex-start; */
-    gap: 70px;
-  }
 }
-
-
-

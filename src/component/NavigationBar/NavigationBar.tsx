@@ -12,11 +12,11 @@ const NavigationBar: FunctionComponent<NavigationBarType> = ({ className = "" })
 
   const handleScroll = (id: string) => {
     scrollToSection(id, 70);
+    setMobileMenuOpen(false); // Close the menu on link click
   };
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
-    console.log(isMobileMenuOpen);
   };
 
   return (
@@ -38,10 +38,10 @@ const NavigationBar: FunctionComponent<NavigationBarType> = ({ className = "" })
         <div className={`${styles.navigationBar} ${isMobileMenuOpen ? styles.open : ''}`}>
           <div className={styles.homeParent}>
             <div className={styles.home}>
-              <a className={styles.investorFeatures1} onClick={() => handleScroll('Services')} >Services</a>
+              <a className={styles.investorFeatures1} onClick={() => handleScroll('Services')}>Services</a>
             </div>
             <div className={styles.home}>
-              <a className={styles.integrations1} onClick={() => handleScroll('Integrations')} >Integrations</a>
+              <a className={styles.integrations1} onClick={() => handleScroll('Integrations')}>Integrations</a>
             </div>
             <div className={styles.appComingSoonWrapper}>
               <a className={styles.appComingSoon}>App Coming Soon</a>
