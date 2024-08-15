@@ -143,7 +143,7 @@
   padding: var(--padding-54xl);
   box-sizing: border-box;
   text-align: center;
-  font-size: var(--font-size-45xl);
+
   color: var(--kagi-white);
   font-family: var(--font-red-hat-display);
 }
@@ -172,9 +172,7 @@
     margin-top: var(--margin-lg);
   }
 
-  .websiteLayoutChild {
-    font-size: var(--font-size-35xl);
-  }
+  
 }
 
 /* 450px Screens */

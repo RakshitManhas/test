@@ -48,6 +48,20 @@
 }
 
 /* Media Queries */
+@media (max-width: 1440px) {
+  .services {
+    padding: 3% 8%;
+  }
+
+  .description {
+    font-size: 1.25rem;
+  }
+
+  .groupContainer {
+    gap: 16px;
+    padding: 0 20px;
+  }
+}
 @media (max-width: 1125px) {
   .services {
     padding: 3% 4%;

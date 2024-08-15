@@ -124,6 +124,28 @@
 }
 
 /* Responsive adjustments */
+@media screen and (max-width: 1440px) {
+  .iconContainer {
+    width: 80px;
+    height: 80px;
+  }
+  .iconImage {
+    width: 54px;
+    height: 54px;
+  }
+  .iconGrid{
+    height: 380px;
+    width: 85%;
+  }
+  .integrations{
+    padding: 8% 5%;
+  }
+  .vectorBG {
+    width: 80%;
+    
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .iconContainer {
     width: 80px;

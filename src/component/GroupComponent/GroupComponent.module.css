@@ -47,6 +47,13 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .rectangleContainer {
+    max-width: 300px;
+    
+  }
+}
+
 /* Media query for mobile responsiveness */
 @media (max-width: 768px) {
   .groupIcon {

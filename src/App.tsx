@@ -11,7 +11,7 @@ const App: React.FC = () => {
     return (
     <>
     <div className="landing-page">
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       <Header />
       <Services/>
       <Accelerator />

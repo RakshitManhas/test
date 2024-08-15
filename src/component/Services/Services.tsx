@@ -11,13 +11,12 @@ const Services: FunctionComponent<ServicesType> = ({ className = "" }) => {
     <section id="Services" className={`${styles.services} ${className}`}>
       <div className={styles.servicesBackground} />
       <div className={styles.contentContainer}>
-        <h1 className={styles.title}>What does Kagi offer?</h1>
+        <h1 className={styles.title}>Why Kagi? </h1>
         <p className={styles.description}>
-          With Kagi’s comprehensive toolkit, unlock the full potential of your
-          digital assets. From token creation to innovative trading and staking
-          solutions, we cover every stage of your project's journey on Bitcoin
-          L2 networks. Optimize your tokenomics and community engagement with
-          Kagi Finance's cutting-edge services.
+          Empowering Bitcoin DeFi with turnkey token management solutions. From
+          creation to vesting, liquidity locks to a vested token marketplace,
+          Kagi Finance provides everything developers need to succeed on any
+          Bitcoin L2.
         </p>
         <div className={styles.groupContainer}>
           <GroupComponent
