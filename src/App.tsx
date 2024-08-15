@@ -1,6 +1,6 @@
 import React from 'react';
 import Header  from './component/Header/Header';
-import NavigationBar from './component/NavigationBar/NavigationBar';
+// import NavigationBar from './component/NavigationBar/NavigationBar';
 import Accelerator from './component/Accelerator/Accelerator';
 import Footer from './component/Footer/Footer';
 import Services from './component/Services/Services';

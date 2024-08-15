@@ -1,9 +1,9 @@
 import { FunctionComponent } from "react";
 import logo from "/assets/Logo Kagi.png";
-import lock from "/assets/icons/group-2.svg";
+// import lock from "/assets/icons/group-2.svg";
 import styles from "./Footer.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 
 export type Footer = {
   className?: string;
