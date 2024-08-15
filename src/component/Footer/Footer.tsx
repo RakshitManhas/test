@@ -58,7 +58,7 @@ const Footer: FunctionComponent<Footer> = ({ className = "" }) => {
                 />
               </a>
               <a
-                href="https://t.me/+pjKbbV4VgipkYmU1"
+                href="https://discord.gg/SKcxdTPthR"
                 target="_blank"
                 rel="noopener noreferrer"
               >
