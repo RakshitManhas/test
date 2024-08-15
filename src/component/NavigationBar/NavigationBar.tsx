@@ -1,5 +1,6 @@
 import { FunctionComponent, useState } from "react";
 import logo from "/assets/Logo Kagi.png";
+import menu from  "/assets/icons/menu-2Ham.png";
 import styles from "./NavigationBar.module.css";
 import { scrollToSection } from "./scroller";
 
@@ -17,6 +18,7 @@ const NavigationBar: FunctionComponent<NavigationBarType> = ({ className = "" })
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
+    console.log(isMobileMenuOpen);
   };
 
   return (
@@ -31,9 +33,10 @@ const NavigationBar: FunctionComponent<NavigationBarType> = ({ className = "" })
       </div>
       <div className={styles.navigationWrapper}>
         <div className={styles.hamburger} onClick={toggleMobileMenu}>
+          {/* <div className={styles.bar}></div>
           <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
+          <div className={styles.bar}></div> */}
+          <img src={menu} alt="Menu" />
         </div>
         <div className={`${styles.navigationBar} ${isMobileMenuOpen ? styles.open : ''}`}>
           <div className={styles.homeParent}>

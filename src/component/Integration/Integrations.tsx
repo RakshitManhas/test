@@ -11,7 +11,7 @@ const Integrations: FunctionComponent<IntegrationsType> = ({ className = "" }) =
 
   useEffect(() => {
     const handleResize = () => {
-      console.log(window.innerWidth);
+      // console.log(window.innerWidth);
       if (window.innerWidth <= 768) {
         setImageSrc('assets/vector-mobile768.png');
       } else {

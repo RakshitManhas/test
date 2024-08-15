@@ -2,7 +2,7 @@
 .rectangleGroup {
   display: flex;
   justify-content: space-between;
-padding: 10px;
+  padding: 10px;
   background-color: var(--kagi-white);
   position: fixed;
   top: 0;
@@ -37,7 +37,8 @@ padding: 10px;
   justify-content: center;
   color: var(--kagi-green);
   font-family: var(--font-red-hat-display);
-  padding: var(--padding-sm) var(--padding-xl) var(--padding-smi) var(--padding-2xl); /* Adjusted to match original */
+  padding: var(--padding-sm) var(--padding-xl) var(--padding-smi)
+    var(--padding-2xl); /* Adjusted to match original */
   min-width: 624px; /* Ensure minimum width matches original */
 }
 
@@ -52,14 +53,23 @@ padding: 10px;
   padding: var(--padding-3xs);
 }
 
-.home1, .aboutUs1, .projectFeatures1, .investorFeatures1, .integrations1, .appComingSoon {
+.home1,
+.aboutUs1,
+.projectFeatures1,
+.investorFeatures1,
+.integrations1,
+.appComingSoon {
   text-decoration: none;
   font-weight: 600;
   color: inherit;
   transition: color 0.3s;
 }
 
-.home1:hover, .aboutUs1:hover, .projectFeatures1:hover, .investorFeatures1:hover, .integrations1:hover {
+.home1:hover,
+.aboutUs1:hover,
+.projectFeatures1:hover,
+.investorFeatures1:hover,
+.integrations1:hover {
   color: var(--kagi-orange);
   cursor: pointer;
 }
@@ -67,7 +77,7 @@ padding: 10px;
 .appComingSoonWrapper {
   border-radius: var(--br-xs);
   border: 1px solid var(--kagi-orange);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: var(--padding-4xs) var(--padding-base);
   white-space: nowrap;
   color: var(--kagi-white);
@@ -96,7 +106,6 @@ padding: 10px;
   }
 }
 
-
 @media screen and (max-width: 1280px) {
   .rectangleGroup {
     padding: 2% 3%; /* Matches original padding */
@@ -104,35 +113,34 @@ padding: 10px;
     gap: 10px; /* Retained gap from original */
     height: 120px; /* Ensure height matches original */
   }
-  
+
   .logoKagiWrapper {
     max-width: 300px; /* Match original */
     max-height: 63px; /* Match original */
   }
-  
+
   .navigationBar {
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--kagi-green);
     font-family: var(--font-red-hat-display);
-    padding: var(--padding-sm) var(--padding-xl) var(--padding-smi) var(--padding-2xl); /* Adjusted to match original */
+    padding: var(--padding-sm) var(--padding-xl) var(--padding-smi)
+      var(--padding-2xl); /* Adjusted to match original */
     min-width: 624px; /* Ensure minimum width matches original */
   }
-  
+
   .homeParent {
     display: flex;
     align-items: flex-start; /* Adjusted to match original */
     justify-content: flex-start; /* Adjusted to match original */
     gap: var(--gap-xs);
   }
-  
+
   .home {
     padding: var(--padding-3xs);
   }
-
 }
-
 
 .navigationWrapper {
   display: flex;
@@ -154,32 +162,40 @@ padding: 10px;
   border-radius: 3px;
 }
 
-
 @media (max-width: 768px) {
   .navigationBar {
     display: block;
     position: absolute;
     top: 100px; /* Adjust based on the height of your navbar */
     right: 0;
-    background-color: #333;
+    background-color: #ffffff;
     flex-direction: column;
     width: 100%;
-    max-width: 250px;
+    max-width: 380px;
+    min-height: 100vh;
     padding: 10px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%) scale(1);
+    opacity: 1;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     z-index: 1001;
   }
 
   .navigationBar.open {
-    transform: translateX(0);
+    transform: translateX(0) scale(1);
+    opacity: 1;
     width: 100%; /* Ensure it does not exceed the viewport width */
-    max-width: 250px; /* Maintain the max-width */
+    min-width: 0px;
     overflow: hidden; /* Prevent content from spilling out */
+  }
+  .navigationBar.closed {
+    transform: translateX(100%) scale(0.95);
+    opacity: 0;
   }
 
   .homeParent {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 20px; /* Adjust spacing for better visibility */
   }
 
@@ -188,12 +204,17 @@ padding: 10px;
   }
 
   .rectangleGroup {
-    gap: 70px;
+    gap: 100px;
+    justify-content: unset;
   }
 
   .logoKagiWrapper {
     max-width: 203px;
     max-height: 63px;
     padding-left: 30px;
+  }
+  .appComingSoonWrapper {
+    width: 80%;
+    text-align: center;
   }
 }
