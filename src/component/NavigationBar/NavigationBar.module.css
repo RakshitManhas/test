@@ -204,8 +204,10 @@
   }
 
   .rectangleGroup {
-    gap: 100px;
-    justify-content: unset;
+    /* gap: 100px; */
+    /* justify-content: unset; */
+    justify-content: center;
+    height: 80px;
   }
 
   .logoKagiWrapper {

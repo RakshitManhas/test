@@ -31,25 +31,25 @@ const NavigationBar: FunctionComponent<NavigationBarType> = ({ className = "" })
           src={logo}
         />
       </div>
-      {/* <div className={styles.navigationWrapper}>
-        <div className={styles.hamburger} onClick={toggleMobileMenu}>
+      <div className={styles.navigationWrapper}>
+        {/* <div className={styles.hamburger} onClick={toggleMobileMenu}>
           
           <img src={menu} alt="Menu" />
-        </div>
-        <div className={`${styles.navigationBar} ${isMobileMenuOpen ? styles.open : ''}`}>
+        </div> */}
+        <div className={styles.navigationBar}>
           <div className={styles.homeParent}>
-            <div className={styles.home}>
+            {/* <div className={styles.home}>
               <a className={styles.investorFeatures1} onClick={() => handleScroll('Services')}>Services</a>
             </div>
             <div className={styles.home}>
               <a className={styles.integrations1} onClick={() => handleScroll('Integrations')}>Integrations</a>
-            </div>
+            </div> */}
             <div className={styles.appComingSoonWrapper}>
               <a className={styles.appComingSoon}>App Coming Soon</a>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
